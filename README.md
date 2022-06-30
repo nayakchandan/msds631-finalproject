@@ -8,7 +8,7 @@ The patent review process involves searching for past filed patents in the same 
 
 ### Training data description
 
-![Class Imbalance](classimb)
+![Class Imbalance](classimb.png)
 
 ### Preprocessing steps
 
