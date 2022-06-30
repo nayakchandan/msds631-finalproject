@@ -18,6 +18,8 @@ For our BERT based model, we used the Autotokenizer from the Pytorch checkpoint 
 
 ### NLP model selection
 
-Our initial 
+Our initial RNN based model did not perform very well. We assumed that given the simplistic and short nature of the sequences a simple architecture would work well. However, training the embeddings from scratch did not help as they did not have any contextual information from a large corpus of text.
+
+We shifted to a BERT based architecture, specifically patent BERT which was released to public domain by Google in 2020. Thanks to the rich embedding, we were able to significantly improve upon the results from a RNN based model. 
 
 ### Results
