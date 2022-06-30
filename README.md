@@ -6,11 +6,11 @@ The patent review process involves searching for past filed patents in the same 
 
 ### Training data description
 
+The train dataset has ~36,000 labelled instances. The dataset contains an anchor word along with a domain specific context id. The goal is to find a relevance score of a target word. To augment the training data, we added the text description of the context ids to the training dataset. The attached notebook details the EDA steps and the presentation contains more details on the training dataset.
+
 ![Class Imbalance](classimb.png)
 
 ### Preprocessing steps
-
-The train dataset has ~36,000 labelled instances. The dataset contains an anchor word along with a domain specific context id. The goal is to find a relevance score of a target word. To augment the training data, we added the text description of the context ids to the training dataset.
 
 Initially we were working with RNN based sequence models. Therefore, we performed lemmatization with SpaCy and used Pytorch's dataset class to generate training batches. 
 
